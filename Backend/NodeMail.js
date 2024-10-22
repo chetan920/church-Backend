@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
 const sendMail = async (email, message, subject, name) => {
   console.log(email,message,subject,name);
   await transporter.sendMail({
-    to: "Bestcreativeyouth@gmail.com",
+    to: "csingh6640@gmail.com",
     replyTo: email,
     subject: `New Query: ${subject}`, // Custom subject line
     text: `Query received from ${email}: ${message}`,
