@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://christarmenianchurch.com/",
+    origin: "https://christarmenianchurch.com",
     credentials: true,
   })
 );
