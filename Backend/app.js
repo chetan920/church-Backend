@@ -34,7 +34,7 @@ app.get("/api/users", (req, res) => {
   });
 });
 app.post("/api/users/create", async (req, res) => {
-  console.log(req.body, "BODY");
+  // console.log(req.body, "BODY");
   // await User.updateMany({}, { $unset: { number: "" } });
   const newUsers = req.body;
   console.log(req.body)
