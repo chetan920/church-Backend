@@ -29,15 +29,15 @@ mongoose
 
 app.get("/api/users", (req, res) => {
   return res.send({
-    message: "server is runding ",
+    message: "server is running ",
     users,
   });
 });
 app.post("/api/users/create", async (req, res) => {
-  console.log(req.body, "BODY");
+  // console.log(req.body, "BODY");
   // await User.updateMany({}, { $unset: { number: "" } });
   const newUsers = req.body;
-  console.log(req.body)
+  // console.log(req.body)
   // console.log(typeof newUsers?.number);
   await sendMail(
     newUsers?.email,
@@ -48,7 +48,7 @@ app.post("/api/users/create", async (req, res) => {
 
   const newUser = await User.create(newUsers);
   return res.send({
-    message: "add new user",
+    message: "Query Sent Successfully!",
     newUser,
   });
 });
